@@ -2,80 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koushik Varma's Portfolio</title>
     <style>
-        body{
-            width:70%;
-            margin:auto;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
         }
-        h1{
-            color:blue;
+        header {
+            background-color: #0073b1;
+            color: white;
+            padding: 20px;
+            text-align: center;
         }
-        h2{
-          
-            background-color:#AFEEEE;
-            border-bottom-style: solid;
-            border-color:#48D1CC;
-            padding-left: 5px;
+        header h1 {
+            margin: 0;
         }
-
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0073b1;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 2px solid #0073b1;
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0073b1;
+        }
+        .experience, .skills {
+            list-style: none;
+            padding: 0;
+        }
+        .experience li, .skills li {
+            background: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0073b1;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-
-    <div style="line-height:3px">
-    <center>
-       <h1>Manthena Koushik Varma</h1>
-       <p>koushikvarma.manthena@gmail.com  Guntur,India</p>
-    </center>
+    <header>
+        <h1>Koushik Varma</h1>
+        <p>Technology Enthusiast | Software Developer | Problem Solver</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About</h2>
+            <p>Hi! I'm Koushik Varma, a passionate software developer with a focus on solving complex problems and building innovative solutions. I love exploring new technologies and constantly strive to improve my skill set.</p>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul class="experience">
+                <li>
+                    <strong>Software Developer</strong> - XYZ Company<br>
+                    <em>Jan 2022 - Present</em><br>
+                    Working on scalable web applications and enhancing user experiences.
+                </li>
+                <li>
+                    <strong>Intern</strong> - ABC Solutions<br>
+                    <em>Jun 2021 - Dec 2021</em><br>
+                    Contributed to backend development and API integrations.
+                </li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li>JavaScript, React, Node.js</li>
+                <li>Python, Django</li>
+                <li>SQL, MongoDB</li>
+                <li>Cloud Computing: AWS, Azure</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:manthenakoushikvarma@example.com">manthenakoushikvarma@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/manthenakoushikvarma/" target="_blank">View Profile</a></p>
+        </section>
     </div>
-
-    <h2> EXPERIENCE</h2>
-            <p><b>Hex N Bit Corporation</b> <i>Intern</i> June 2021 – July 2021</p>
-            <ul>
-              <li>Consisted of a course that had a duration of 6 weeks and a minor project based on ML.</li>
-              <li>Explored various Machine Learning Algorithms and grasped a basic understanding of them.</li>
-              <li>Calibrated the accuracy of 4 classification methods in Machine Learning - Support Vector Machine, Logistic Regression, K Nearest Neighbors, and Decision Trees for the given data set as the project.</li>
-            </ul>
-    <h2>PROJECTS</h2>
-            <p><b>STUDENT PORTAL</b> March 2021 - May 2021</p>
-            <ul>
-                <li>Developed a Student portal which Students, Teachers and Admins can use.</li>
-                <li>Utilized technologies such as HTML, CSS, PHP and SQL.</li>
-                <li>Teachers can add, and modify marks, Students can check their marks and details, and Admins can add or delete students, records and change students, details.</li>
-            </ul>
-            <p><b>CRICKET SCORE TRACKER</b> January 2022 – May 2022</p>
-            <ul>
-                <li>Developed a web application which can be used to check scores of live cricket matches.</li>
-                <li>Technologies such as HTML, CSS, PHP, JavaScript and SQL were used.</li>
-                <li>Anyone on the internet can use this application to keep track of any live cricket game and Admins are responsible for creating a match, uploading player details and updating the scores.</li>
-            </ul>
-    <h2>SKILLS</h2>
-            <ul>
-            <li><b>Programming Languages</b> - C++, C, Python, Java.</li>
-            <li><b>Web Technologies</b> - Html, CSS.</li>
-            <li><b>Database </b>- DBMS, SQL.</li>
-            </ul>
-    <h2>CERTIFICATIONS & TRAININGS</h2>
-            <ul>
-                <li>Certified Web Developer from Eduonix, 2021.</li>
-                <li>Hacker rank certificate for problem-solving, 2021.</li>
-                <li>Hacker rank certificate for SQL, 2022.</li>
-            </ul>
-    <h2>EDUCATION</h2>
-            <ul><p>
-            <b>SRM University, Amravati, AP July 2019 - Present</b><br/>
-            Bachelor of Engineering, Computer Science,Specialisation in Artificial Intelligence and Machine Learning, CGPA: 8.80/10<br/><br/>
-            <b>Tirumala Junior College, Rajahmundry, AP July 2018 - March 2019</b><br/>
-            12th Class, MPC, CGPA: 9.88/10<br/><br/>
-            <b>Narayana High School, Nellore, AP July 2016 - March 2017</b><br/>
-            10th Class, GPA: 9.5/10<br/>
-            </p></ul>
-    <h2>Activities and Achievements</h2>
-            <ul>
-                <li>TCS Codevita Season 10 Rank Certificate (Global Rank: 5360), 2022.</li>
-                <li>Peer Evaluation on C programming skills, 2022.</li>
-                <li>Python Instructor for 3rd year B-Tech Students</li>
-            </ul>
+    <footer>
+        © 2024 Koushik Varma. All rights reserved.
+    </footer>
 </body>
 </html>
